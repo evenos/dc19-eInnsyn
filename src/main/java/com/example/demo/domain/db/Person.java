@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.domain.db;
 
 import lombok.*;
 
@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class Person {
 
-    Person(String navn, String alder){
+    public Person(String navn, String alder){
         this.navn = navn;
         this.alder = alder;
     }
