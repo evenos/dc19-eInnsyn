@@ -35,12 +35,25 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
 
-		<!-- Kjekt å ha -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>com.microsoft.spring.data.gremlin</groupId>
+            <artifactId>spring-data-gremlin</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+
+
+        <!-- TinkerPop -->
+        <dependency>
+            <groupId>com.tinkerpop.blueprints</groupId>
+            <artifactId>blueprints-sail-graph</artifactId>
+            <version>2.6.0</version>
+            <scope>provided</scope>
+        </dependency>
 
 
 		<!-- RDF4j avhengigheter fra eInnsyn -->
@@ -81,6 +94,12 @@
 		</dependency>
 
 
+        <!-- Kjekt å ha -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
 
 		<!-- Bruker Jitpack til å bygge og hente Pinto fra GitHub -->
 		<dependency>
@@ -89,6 +108,7 @@
 			<version>2.0</version>
 		</dependency>
 
+        
 		<!-- Pinto har noen avhengigheter fra StarDog -->
 		<dependency>
 			<groupId>com.complexible.stardog.core</groupId>
@@ -103,7 +123,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+
+
+
+
+
+        <dependency>
+            <groupId>org.openrdf.sesame</groupId>
+            <artifactId>sesame-repository-api</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

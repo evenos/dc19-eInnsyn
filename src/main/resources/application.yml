@@ -1,0 +1,14 @@
+#spring:
+#  datasource:
+#    url:
+#    username:
+#spring.datasource.password=secret
+
+
+gremlin:
+  endpoint: dc19-e-innsyn.gremlin.cosmosdb.azure.com
+  port: 443
+  #  username:
+  #  password:
+  sslEnabled: true
+  telemetryAllowed: true

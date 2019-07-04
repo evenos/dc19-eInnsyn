@@ -13,7 +13,7 @@ import java.util.Set;
 @RestController
 public class Controller {
 
-    @Autowired
+//    @Autowired
     PersonRepository personRepository;
 
     @GetMapping(path = "/hello")
